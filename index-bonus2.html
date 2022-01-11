@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html-css-12bool-bonus2</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="framework.css">
+</head>
+<body>
+    <section>
+        <h1>BOOL-DUNGEON</h1>
+        <h3>REGOLE:</h3>
+        <h4>Partendo dallo start (in fondo alla pagina) muovi il personaggio usando il puntatore del mouse. Passa da casella a casella, vedrai in HOVER il personaggio comparire e muoversi. Il tuo obbiettivo?! Semplice, arrivare al tesoro vincente (WIN), se trovi un tesoro perdente (LOSE) sarai costretto a ripartire da capo!<br>BUON DIVERTIMENTO!</h4>
+    </section>
+
+    <section>
+        <div class="row">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">LOSE</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">WIN!</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">LOSE</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">LOSE</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">LOSE</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_LEFT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_FRONT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs"><img src="img/CARACHTER_RIGHT.png" alt=""></div>
+            </div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/TREASURE.png" alt=""></div>
+                <div class="abs text">LOSE</div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1 rel">
+                <img src="img/FLOOR.jpg" alt="">
+                <div class="abs2"><img src="img/CARACHTER_BACK.png" alt=""></div>
+            </div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+
+        <div class="row space">
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+            <div class="col1"><img src="img/WALL.jpg" alt=""></div>
+        </div>
+    </section>
+
+    <section>
+        <h4>Fatto con &#9829; da Federico Pizzeghello</h4>
+    </section>
+</body>
+</html>
